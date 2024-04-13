@@ -65,7 +65,7 @@ class Calculator {
                 this.display.value = 'Error: expresión no válida';
                 return;
             }
-            this.display.value = result;
+            this.display.value = result;//se muestra el resultado en la pantalla
             localStorage.setItem('lastCalculation', expression + '=' + result);//guarda el ultimo valor en el local storage
         } catch (error) {
             this.display.value = 'Error: expresión no válida';
