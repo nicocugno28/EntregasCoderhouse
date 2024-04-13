@@ -5,7 +5,7 @@ class Calculator {
         this.numberButtons = document.querySelectorAll('.number');//estos serian los botones de numeros que usaremos
         this.operatorButtons = document.querySelectorAll('.operator');
         this.clearButton = document.getElementById('clear');
-        this.equalsButton = document.getElementById('equals');//este os permitira calcular las operaciones por medio de eventos
+        this.equalsButton = document.getElementById('equals');//este nos permitira calcular las operaciones por medio de eventos
         this.lastCalculation = localStorage.getItem('lastCalculation') || '';//esto nos permitira guardar en el local storage la ultima operacion del usuario
         this.attachEventListeners();//metodo que escucha el boton y lo agrega a la pantalla
     }
