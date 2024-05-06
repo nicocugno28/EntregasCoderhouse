@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="calculadora.css">
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" readonly>
-        <div class="keys">
-            <button class="number" data-value="7">7</button>
-            <button class="number" data-value="8">8</button>
-            <button class="number" data-value="9">9</button>
-            <button class="operator" data-value="+">+</button>
-            <button class="number" data-value="4">4</button>
-            <button class="number" data-value="5">5</button>
-            <button class="number" data-value="6">6</button>
-            <button class="operator" data-value="-">-</button>
-            <button class="number" data-value="1">1</button>
-            <button class="number" data-value="2">2</button>
-            <button class="number" data-value="3">3</button>
-            <button class="operator" data-value="*">*</button>
-            <button class="number" data-value="0">0</button>
-            <button id="clear">C</button>
-            <button id="equals" class="operator">=</button>
-            <button class="operator" data-value="/">/</button>
+    <nav>
+        <div class="container">
+            <a href="#" id="reload-button"><h1>Rick and Morty</h1></a>
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            <a href="#" id="view-favorites-btn" class="boton">View Favorites</a>
         </div>
+    </nav>
+    <div id="characters" class="container">
+        <!-- Aquí se agregarán las cartas de los personajes -->
     </div>
-    <script src="script.js"></script>
+    
+    <!-- Botón "Load More" -->
+    <button id="loadMoreBtn" class="boton">Load More</button>
+    <button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="main.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
